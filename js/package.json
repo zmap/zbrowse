@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "chrome-remote-interface": "^0.12.3",
+    "dns-sync": "^0.1.3"
+  },
+  "scripts": {
+    "all": "npm run google & npm run amazon",
+    "google": "node ~/research/chromium/js/network.js blah http://google.com googleout",
+    "amazon": "node ~/research/chromium/js/network.js blah http://amazon.com amazonout"
+  }
+}
