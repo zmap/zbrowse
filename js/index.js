@@ -15,7 +15,7 @@ if (process.argv.length != 3) {
     process.exit(-1);     
 }
 
-var headlessPath = "/usr/bin/chromium-browser";
+var headlessPath = "chromium-browser";
 var debuggingPort = 9222;
 var url = process.argv[2];
 

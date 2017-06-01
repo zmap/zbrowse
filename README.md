@@ -8,10 +8,10 @@ date build of headless Chromium is you are experiencing trouble.
 
 ## Requirements
 NodeJS 6+
-headless_shell (or equivalent headless enabled build from Google, https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md)
+chromium-browser version that supports the --headless option
 
 ## Usage
-This tool will spawn a headless_shell instance and connect on the port provided in 
+This tool will spawn a headless Chromium and connect on the port provided in 
 the input.
 
 Before using the tool, be sure to do an
@@ -25,12 +25,12 @@ to get all the relevant node packages.
 
 ```
 cd js
-node index.js <path_to_headless_shell> <headless_connect_port> <URL>
+node index.js <URL>
 ```
 
 ## Example
 ```
-node index.js ~/src/out/Headless/headless_shell 9222 https://www.google.com
+node index.js https://www.google.com
 ```
 
 ## Docker usage
