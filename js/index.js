@@ -10,17 +10,17 @@ var queue = require('./util/queue.js')
 var fs = require('fs')
 var url = require('url')
 
-if (process.argv.length != 5) {
-    console.error('Correct usage: node index.js <headlessPath> <debuggingPort> <url>');
+if (process.argv.length != 3) {
+    console.error('Correct usage: node index.js <url>');
     process.exit(-1);     
 }
 
-var headlessPath = process.argv[2];
-var debuggingPort = process.argv[3];
-var url = process.argv[4];
+var headlessPath = "/usr/bin/chromium-browser";
+var debuggingPort = 9222;
+var url = process.argv[2];
 
 /*Start headless process*/
-var headless = spawn(headlessPath, [
+var headless = spawn(headlessPath, ["--headless", "--disable-gpu",
     '--remote-debugging-port='+debuggingPort]);
 
 var redirects = new Map();
