@@ -13,12 +13,12 @@ Changes in headless Chromium can break functionality with certain sites.
 ## Requirements
 
 *  NodeJS 6+
+*  chromium-browser version that supports the --headless option
 *  headless_shell ([or equivalent headless enabled build from Google](https://chromium.googlesource.com/chromium/src/+/master/headless/README.md "Headless Chromium README"))
 
 ## Getting Started
 
 ZBrowse will spawn a headless_shell instance of Chromium and uses the [DevTools protocol](https://chromedevtools.github.io/devtools-protocol/ "Chrome DevTools Protocol") to instrument, inspect, debug and profile websites.
-
 
 ### Setup
 
@@ -33,7 +33,7 @@ npm install
 
 ```
 cd js
-node index.js <path_to_headless_shell> <headless_connect_port> <URL>
+node index.js <URL>
 ```
 
 ## Example
@@ -41,7 +41,7 @@ node index.js <path_to_headless_shell> <headless_connect_port> <URL>
 This is a basic example of using ZBrowse to connect to google.
 
 ```
-node index.js ~/src/out/Headless/headless_shell 9222 https://www.google.com
+node index.js https://www.google.com
 ```
 
 ## Docker usage
