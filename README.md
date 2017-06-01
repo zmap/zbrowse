@@ -32,3 +32,17 @@ node index.js <path_to_headless_shell> <headless_connect_port> <URL>
 ```
 node index.js ~/src/out/Headless/headless_shell 9222 https://www.google.com
 ```
+
+## Docker usage
+
+### Build image
+
+```
+docker build -t zbrowse .
+```
+
+### Run
+
+```
+docker run --rm zbrowse <url>
+```
