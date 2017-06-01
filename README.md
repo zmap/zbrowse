@@ -43,3 +43,17 @@ This is a basic example of using ZBrowse to connect to google.
 ```
 node index.js ~/src/out/Headless/headless_shell 9222 https://www.google.com
 ```
+
+## Docker usage
+
+### Build image
+
+```
+docker build -t zbrowse .
+```
+
+### Run
+
+```
+docker run --rm zbrowse <url>
+```
