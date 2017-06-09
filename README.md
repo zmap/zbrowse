@@ -1,8 +1,8 @@
 # zbrowse
 
-Measurement tool for tracking dependencies for websites.
+Measurement tool to track dependencies for websites.
 This tool is part of the [The ZMap Project](https://zmap.io/ "ZMap Project").
-The ZMap Project is a large open source community maintains this tool and others that support large-scale Internet measurement.
+The ZMap Project is a large open source community that maintains this tool and others that support large-scale Internet measurement.
 Much of the development happens at the [University of Michigan](https://www.umich.edu), [University of Illinois Urbana-Champaign](http://illinois.edu/), [University of California, Berkeley](http://www.berkeley.edu/), and [Rapid7](https://www.rapid7.com/). 
 The core team can be reached at <zmap-team@umich.edu>. 
 
