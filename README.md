@@ -1,5 +1,4 @@
 # zbrowse
----------------------------------------
 
 Measurement tool for tracking dependencies for websites. This tool is in active 
 development, and headless Chromium is in active development. Changes in headless
@@ -9,7 +8,7 @@ most up to date build of headless Chromium if you are experiencing trouble.
 ## Requirements
 
 *  NodeJS 6+
-*  headless_shell (or equivalent headless enabled build from Google, https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md)
+*  headless_shell ([or equivalent headless enabled build from Google](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md "Headless Chromium README"))
 
 ## Usage
 
