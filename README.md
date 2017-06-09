@@ -2,7 +2,8 @@
 
 Measurement tool for tracking dependencies for websites. 
 This tool is in active development, and [headless Chromium](https://chromium.googlesource.com/chromium/src/+/master/headless/ "Headless Chromium") is in active development. 
-Changes in headless Chromium tend to break functionality with certain sites - make sure you have the most up to date build of headless Chromium if you are experiencing trouble.
+Changes in headless Chromium tend to break functionality with certain sites.
+If you are experiencing trouble make sure you have the most up to date build of headless Chromium.
 
 ## Requirements
 
