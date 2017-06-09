@@ -1,9 +1,14 @@
 # zbrowse
 
-Measurement tool for tracking dependencies for websites. 
+Measurement tool for tracking dependencies for websites.
+This tool is part of the [The ZMap Project](https://zmap.io/ "ZMap Project").
+The ZMap Project is a large open source community maintains this tool and others that support large-scale Internet measurement.
+Much of the development happens at the [University of Michigan](https://www.umich.edu), [University of Illinois Urbana-Champaign](http://illinois.edu/), [University of California, Berkeley](http://www.berkeley.edu/), and [Rapid7](https://www.rapid7.com/). 
+The core team can be reached at <zmap-team@umich.edu>. 
+
 This tool is in active development, and [headless Chromium](https://chromium.googlesource.com/chromium/src/+/master/headless/ "Headless Chromium") is in active development. 
 Changes in headless Chromium tend to break functionality with certain sites.
-If you are experiencing trouble make sure you have the most up to date build of headless Chromium.
+**If you are experiencing trouble make sure you have the most up to date build of headless Chromium.**
 
 ## Requirements
 
