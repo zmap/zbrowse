@@ -1,9 +1,8 @@
 # zbrowse
 
-Measurement tool for tracking dependencies for websites. This tool is in active 
-development, and headless Chromium is in active development. Changes in headless
-Chromium tend to break functionality with certain sites - make sure you have the
-most up to date build of headless Chromium if you are experiencing trouble.
+Measurement tool for tracking dependencies for websites. 
+This tool is in active development, and [headless Chromium](https://chromium.googlesource.com/chromium/src/+/master/headless/ "Headless Chromium") is in active development. 
+Changes in headless Chromium tend to break functionality with certain sites - make sure you have the most up to date build of headless Chromium if you are experiencing trouble.
 
 ## Requirements
 
@@ -12,13 +11,12 @@ most up to date build of headless Chromium if you are experiencing trouble.
 
 ## Setup and Usage
 
-This tool will spawn a headless_shell instance and connect on the port provided in 
-the input.
+This tool will spawn a headless_shell instance and connect on the port provided in the input.
 
 
 ### Setting up zbrowse 
 
-Before using the tool, be sure to run `npm install` to get all the relevant node packages.
+Before using zbrowse, be sure to run `npm install` to get all the relevant node packages downloaded and installed.
 
 ```
 cd js
@@ -26,9 +24,6 @@ npm install
 ```
 
 ### zbrowse Usage
-
-Here is the usage for zbrowse to connect a headless Chromium build ([headless_shell](https://chromium.googlesource.com/chromium/src/+/master/headless/)) on a port to a URL.
-
 
 ```
 cd js
@@ -38,7 +33,6 @@ node index.js <path_to_headless_shell> <headless_connect_port> <URL>
 ## Using zbrowse
 
 This is a basic example of using zbrowse to connect to google's website.
-
 
 ```
 node index.js ~/src/out/Headless/headless_shell 9222 https://www.google.com
