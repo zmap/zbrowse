@@ -36,9 +36,9 @@ cd js
 node index.js <path_to_headless_shell> <headless_connect_port> <URL>
 ```
 
-## Using zbrowse
+## Example
 
-This is a basic example of using zbrowse to connect to google's website.
+This is a basic example of using zbrowse to connect to google.
 
 ```
 node index.js ~/src/out/Headless/headless_shell 9222 https://www.google.com
