@@ -8,28 +8,37 @@ most up to date build of headless Chromium if you are experiencing trouble.
 ## Requirements
 
 *  NodeJS 6+
-*  headless_shell ([or equivalent headless enabled build from Google](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md "Headless Chromium README"))
+*  headless_shell ([or equivalent headless enabled build from Google](https://chromium.googlesource.com/chromium/src/+/master/headless/README.md "Headless Chromium README"))
 
-## Usage
+## Setup and Usage
 
 This tool will spawn a headless_shell instance and connect on the port provided in 
 the input.
 
-Before using the tool, be sure to run `npm install`
+
+### Setting up zbrowse 
+
+Before using the tool, be sure to run `npm install` to get all the relevant node packages.
 
 ```
 cd js
 npm install
 ```
 
-to get all the relevant node packages.
+### zbrowse Usage
+
+Here is the usage for zbrowse to connect a headless Chromium build ([headless_shell](https://chromium.googlesource.com/chromium/src/+/master/headless/)) on a port to a URL.
+
 
 ```
 cd js
 node index.js <path_to_headless_shell> <headless_connect_port> <URL>
 ```
 
-## Example
+## Using zbrowse
+
+This is a basic example of using zbrowse to connect to google's website.
+
 
 ```
 node index.js ~/src/out/Headless/headless_shell 9222 https://www.google.com
