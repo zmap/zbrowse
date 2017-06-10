@@ -6,9 +6,9 @@ The ZMap Project is a large open source community that maintains this tool and o
 Much of the development happens at the [University of Michigan](https://www.umich.edu), [University of Illinois Urbana-Champaign](http://illinois.edu/), [University of California, Berkeley](http://www.berkeley.edu/), and [Rapid7](https://www.rapid7.com/). 
 The core team can be reached at <zmap-team@umich.edu>. 
 
-This tool is in active development, and [headless Chromium](https://chromium.googlesource.com/chromium/src/+/master/headless/ "Headless Chromium") is in active development. 
-Changes in headless Chromium tend to break functionality with certain sites.
-**If you are experiencing trouble make sure you have the most up to date build of headless Chromium.**
+This tool is in active development, and [headless Chromium](https://chromium.googlesource.com/chromium/src/+/master/headless/ "Headless Chromium") is also in active development. 
+Changes in headless Chromium can break functionality with certain sites.
+**If you are experiencing trouble, make sure you have the most up to date build of headless Chromium.**
 
 ## Requirements
 
@@ -17,7 +17,7 @@ Changes in headless Chromium tend to break functionality with certain sites.
 
 ## Setup and Usage
 
-This tool will spawn a headless_shell instance and connect on the port provided in the input.
+This tool will spawn a headless_shell instance of Chromium and uses the [DevTools protocol](https://chromedevtools.github.io/devtools-protocol/ "Chrome DevTools Protocol") to instrument, inspect, debug and profile websites.
 
 
 ### Setting up zbrowse 
