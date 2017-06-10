@@ -1,4 +1,4 @@
-# zbrowse
+# ZBrowse
 
 ZBrowse is a measurement tool to track dependencies for websites using a command-line headless web browser built on top of Headless Chrome.
 This tool produces JSON reports on the structure of websites including the object dependency tree and network requests.
