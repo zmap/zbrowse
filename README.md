@@ -14,7 +14,6 @@ Changes in headless Chromium can break functionality with certain sites.
 
 *  NodeJS 6+
 *  chromium-browser version that supports the --headless option
-*  headless_shell ([or equivalent headless enabled build from Google](https://chromium.googlesource.com/chromium/src/+/master/headless/README.md "Headless Chromium README"))
 
 ## Getting Started
 
@@ -39,6 +38,20 @@ node index.js <URL>
 ## Example
 
 This is a basic example of using ZBrowse to connect to google.
+
+```
+node index.js https://www.google.com
+```
+
+## Docker usage
+
+### Build image
+
+```
+docker build -t zbrowse .
+```
+
+### Run
 
 ```
 node index.js https://www.google.com
