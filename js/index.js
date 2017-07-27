@@ -20,8 +20,13 @@ var debuggingPort = 9222;
 var url = process.argv[2];
 
 /*Start headless process*/
-var headless = spawn(headlessPath, ["--headless", "--disable-gpu",
+var headless = spawn(headlessPath, ["--headless", "--disable-gpu", "--no-sandbox",
     '--remote-debugging-port='+debuggingPort]);
+
+headless.on('error', (err) => {
+  console.error(`Failed to start headless process: ${err}`);
+});
+
 
 var redirects = new Map();
 var responses = new Map();
@@ -137,5 +142,8 @@ function connect() {
     getChromeInstance().then(instance => {
         enableInstanceProperties(instance);
         setTimeout(getResourceTree.bind(null, instance), 25000);
+    }, (error) => {
+      console.error("Error connecting:");
+      console.error(error);
     });
 }
