@@ -1,4 +1,4 @@
 #!/bin/bash
 
-nodejs index.js $@ > /tmp/output.js
+nodejs js/index.js $@ > /tmp/output.js
 cat /tmp/output.js
